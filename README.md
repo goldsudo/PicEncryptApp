@@ -12,9 +12,6 @@ PicEncrypt是我在大学的本科毕业设计中做出来的一个android app�
 app安装成功后如下图中的PicEncrypt所示:<br>
 ![image](https://github.com/goldsudo/PicEncryptApp/blob/master/SNAP-SHOT/app-icon.jpg)
 
-启动画面：<br>
-![image](https://github.com/goldsudo/PicEncryptApp/blob/master/SNAP-SHOT/start.jpg)
-
 主页面：<br>
 ![image](https://github.com/goldsudo/PicEncryptApp/blob/master/SNAP-SHOT/index.jpg)
 
