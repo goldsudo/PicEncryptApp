@@ -46,4 +46,4 @@ app安装成功后如下图中的PicEncrypt所示:<br>
 ![image](https://github.com/goldsudo/PicEncryptApp/blob/master/SNAP-SHOT/zhifang.jpg)
 
 项目UML类图：<br>
-![image](https://github.com/goldsudo/PicEncryptApp/blob/master/SNAP-SHOT/UML.jpg)
+![image](https://github.com/goldsudo/PicEncryptApp/blob/master/SNAP-SHOT/UML.png)
