@@ -9,44 +9,44 @@ PicEncrypt是我在大学的本科毕业设计中做出来的一个android app�
 也可以直接下载打包好的apk文件直接安装在手机上：
 
 ## 项目演示
-app安装成功后如下图中的PicEncrypt所示:
+app安装成功后如下图中的PicEncrypt所示:<br>
 ![image](https://github.com/goldsudo/PicEncryptApp/blob/master/SNAP-SHOT/app-icon.jpg)
-<br>
-启动画面：
+
+启动画面：<br>
 ![image](https://github.com/goldsudo/PicEncryptApp/blob/master/SNAP-SHOT/start.jpg)
-<br>
-主页面：
+
+主页面：<br>
 ![image](https://github.com/goldsudo/PicEncryptApp/blob/master/SNAP-SHOT/index.jpg)
-<br>
-打开相册：
+
+打开相册：<br>
 ![image](https://github.com/goldsudo/PicEncryptApp/blob/master/SNAP-SHOT/photos.jpg)
-<br>
-选中图片：
+
+选中图片：<br>
 ![image](https://github.com/goldsudo/PicEncryptApp/blob/master/SNAP-SHOT/choose.jpg)
-<br>
-输入密钥进行加密：
+
+输入密钥进行加密：<br>
 ![image](https://github.com/goldsudo/PicEncryptApp/blob/master/SNAP-SHOT/input-key.jpg)
 ![image](https://github.com/goldsudo/PicEncryptApp/blob/master/SNAP-SHOT/enc.jpg)
-<br>
-加密结果：
+
+加密结果：<br>
 ![image](https://github.com/goldsudo/PicEncryptApp/blob/master/SNAP-SHOT/enc-res.jpg)
-<br>
-输入相同的密钥即可解密：
+
+输入相同的密钥即可解密：<br>
 ![image](https://github.com/goldsudo/PicEncryptApp/blob/master/SNAP-SHOT/dec.jpg)
 ![image](https://github.com/goldsudo/PicEncryptApp/blob/master/SNAP-SHOT/dec-res.jpg)
-<br>
-密钥的输入限制：
+
+密钥的输入限制：<br>
 ![image](https://github.com/goldsudo/PicEncryptApp/blob/master/SNAP-SHOT/check.jpg)
-<br>
-解密过程中可添加噪声，以模仿数据传输过程中的失真：
+
+解密过程中可添加噪声，以模仿数据传输过程中的失真：<br>
 ![image](https://github.com/goldsudo/PicEncryptApp/blob/master/SNAP-SHOT/add-noise.jpg)
-<br>
-添加噪声后的解密结果，可以发现噪声并不影响图像的整体还原：
+
+添加噪声后的解密结果，可以发现噪声并不影响图像的整体还原：<br>
 ![image](https://github.com/goldsudo/PicEncryptApp/blob/master/SNAP-SHOT/noise.jpg)
-<br>
-图像色值直方图：
+
+图像色值直方图：<br>
 ![image](https://github.com/goldsudo/PicEncryptApp/blob/master/SNAP-SHOT/zhifangtu.jpg)
 ![image](https://github.com/goldsudo/PicEncryptApp/blob/master/SNAP-SHOT/zhifang.jpg)
-<br>
-项目UML类图：
+
+项目UML类图：<br>
 ![image](https://github.com/goldsudo/PicEncryptApp/blob/master/SNAP-SHOT/UML.jpg)
