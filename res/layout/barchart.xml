@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <view
+        class="com.github.mikephil.charting.charts.BarChart"
+        android:id="@+id/spread_bar_chart"
+        android:layout_width="match_parent"
+    	android:layout_height="420dp"
+    	android:layout_gravity="center_horizontal"/>
+ 
+<!--     <LinearLayout
+		    android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_marginTop="5dp"
+    		android:gravity="center_horizontal"
+    		android:orientation="horizontal">
+			<Button
+	    	    android:id="@+id/back"
+	    	    android:layout_width="match_parent"
+    			android:layout_height="wrap_content"
+	        	android:text="返回"
+	        	android:textColor="#000000"
+	        	android:background="@drawable/shape1"/>
+	</LinearLayout> -->
+    
+
+</LinearLayout>

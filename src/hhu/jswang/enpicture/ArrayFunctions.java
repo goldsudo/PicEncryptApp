@@ -3,10 +3,6 @@ package hhu.jswang.enpicture;
 	一系列数组方面的操作
  */
 public class ArrayFunctions {
-	 int random(int m, int n) 
-	{
-		return m + (int) (Math.random() * n);
-	}
 	//二维数组降一维
 	void recovery(int arr2[][], int arr1[], int M, int N)
 	{
@@ -29,18 +25,6 @@ public class ArrayFunctions {
 		}
 
 	}
-	//生成一个随机的象素模拟数组
-	void produce_pixel_array(int pixel[], int M, int N)
-	{
-		for (int i1 = 0; i1 < M*N; ++i1)
-		{
-			pixel[i1] = random(1, 10);
-
-		}
-	}
-	//用于交换数组中的两个元素
-
-
 	//把二维数组行列倒换
 	void arr_change(int arr[][],int temp[][], int M, int N)
 	{
@@ -49,12 +33,6 @@ public class ArrayFunctions {
 			for (int j = 0; j < N; ++j)
 				temp[j][i] = arr[i][j];
 		}
-		/*
-		for (int i = 0; i < M; ++i)
-		{
-			for (int j = 0; j < N; ++j)
-				arr[i][j] = temp[i][j];
-		}*/
 	}
 
 	//把arr1复制给arr2

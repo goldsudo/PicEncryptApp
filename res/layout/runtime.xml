@@ -72,7 +72,6 @@
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content"
 		    android:layout_marginLeft="1dp"
-		    android:layout_marginRight="15dp"
 		    android:background="@drawable/shape2"
 		    android:text="置乱"
 		    android:textColor="#FFFFE0" />
@@ -81,9 +80,26 @@
 		    android:id="@+id/decrypt"
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content"
-		    android:layout_marginLeft="5dp"
+		    android:layout_marginLeft="1dp"
 		    android:background="@drawable/shape2"
 		    android:text="解密"
+		    android:textColor="#FFFFE0" />
+		
+			<Button
+		    android:id="@+id/noise"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="1dp"
+		    android:background="@drawable/shape2"
+		    android:text="噪声"
+		    android:textColor="#FFFFE0" />
+			<Button
+		    android:id="@+id/barchart"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="1dp"
+		    android:background="@drawable/shape2"
+		    android:text="直方图"
 		    android:textColor="#FFFFE0" />
 
 	</LinearLayout>

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-  <!--点击背景-->
-    <item android:state_pressed="true">
-        <shape>
-             <!--色值-->
+
+    <!-- 点击背景 -->
+    <item android:state_pressed="true"><shape>
+
+            <!-- 色值 -->
             <solid android:color="#A3A3A380" />
-            <!--圆角-->
+            <!-- 圆角 -->
             <corners android:radius="10dp" />
-        </shape>
-    </item>
-    <!--默认背景-->
-    <item>
-    <shape>
-        	<solid android:color="#00339920" />
-        	<corners android:radius="10dp" />
-        </shape>
-  </item>
+        </shape></item>
+    <!-- 默认背景 -->
+    <item><shape>
+            <solid android:color="#00339920" />
+
+            <corners android:radius="10dp" />
+        </shape></item>
+
 </selector>

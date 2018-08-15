@@ -4,11 +4,6 @@ package hhu.jswang.enpicture;
  */
 import java.util.*;  
 public class myAlgorithms {
-	// 生成随机[m,n]间的随机数 
-	static int random(int m, int n) 
-	{
-		return m + (int) (Math.random() * n);
-	}
 	//加解密时使用，选择法排序，同时生成地址映射表
 	static void SelectSort(double arr[], int length, HashMap m, int address_arr[])
 	{

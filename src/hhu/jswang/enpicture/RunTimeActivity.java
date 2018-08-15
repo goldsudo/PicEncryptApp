@@ -1,12 +1,15 @@
 package hhu.jswang.enpicture;
 
+import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import com.github.mikephil.charting.charts.BarChart;
-import hhu.tianyinggui.enpicture.R;
 
+import com.github.mikephil.charting.charts.BarChart;
+
+import hhu.jswang.enpicture.BarchartActivity;
+import hhu.jswang.enpicture.R;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -32,6 +35,7 @@ public class RunTimeActivity extends Activity {
 	private Button encrypt;
 	private Button decrypt;
 	private Button out;
+	private Button noise;
 	private Button barchart;
 	private static int GALLERY_REQUEST_CODE=2;
     @Override
@@ -44,6 +48,8 @@ public class RunTimeActivity extends Activity {
         choise=(Button)findViewById(R.id.choise);
         encrypt=(Button)findViewById(R.id.encrypt);
         decrypt=(Button)findViewById(R.id.decrypt);
+        noise = (Button)findViewById(R.id.noise);
+        barchart = (Button)findViewById(R.id.barchart);
         out=(Button)findViewById(R.id.out);
         imageView.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v){
@@ -156,6 +162,7 @@ public class RunTimeActivity extends Activity {
         decrypt.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v){
 				key1 = (EditText)findViewById(R.id.key1);
+				imageView=(ImageView)findViewById(R.id.imageView);
 				String key1Str=key1.getText().toString().trim();
 				if(imageView.getDrawable()==null)
 				{
@@ -189,6 +196,35 @@ public class RunTimeActivity extends Activity {
 				}
 			}
        });
+        noise.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v){
+				imageView=(ImageView)findViewById(R.id.imageView);
+				if(imageView.getDrawable()==null)
+				{
+					Toast.makeText(RunTimeActivity.this, "请选择一副图片", Toast.LENGTH_LONG).show();
+					return;
+				}
+				else
+				{
+					Toast.makeText(RunTimeActivity.this, "噪声", Toast.LENGTH_LONG).show();
+					noise();
+					return;
+				}
+			}
+		});
+            barchart.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v){
+				Toast.makeText(RunTimeActivity.this, "直方图", Toast.LENGTH_LONG).show();
+				imageView=(ImageView)findViewById(R.id.imageView);	
+		    	Bitmap bmp= ((BitmapDrawable)imageView.getDrawable()).getBitmap();
+				Intent intent=new Intent(RunTimeActivity.this,BarchartActivity.class);
+				ByteArrayOutputStream baos=new ByteArrayOutputStream();  
+				bmp.compress(Bitmap.CompressFormat.PNG, 100, baos);  
+				byte [] bitmapByte =baos.toByteArray();  
+				intent.putExtra("bitmap", bitmapByte);  
+				startActivity(intent);
+			}
+        });	
    }
     
     void encrypt(double x)
@@ -239,6 +275,23 @@ public class RunTimeActivity extends Activity {
     	imageView.setImageBitmap(bitmap);
     	
     }
+    
+    //噪声
+	 void noise(){
+		//获取图像像素矩阵的行数与列数
+		Bitmap bmp= ((BitmapDrawable)imageView.getDrawable()).getBitmap();
+		int M=bmp.getHeight(),N=bmp.getWidth();
+
+		//获取图像像素矩阵
+		int[] pixel=new int[M*N];
+		bmp.getPixels(pixel, 0, N, 0, 0, N, M);
+		for(int i=0;i<M;++i){
+			for(int j=0;j<N&&(i+j*i)<M*N;++j)
+				pixel[i+j*i] = 255;
+		}
+		Bitmap bitmap = Bitmap.createBitmap(pixel, 0, N, N, M, Bitmap.Config.ARGB_8888);
+    	imageView.setImageBitmap(bitmap);
+	}
     
 	protected void onActivityResult(int requestCode, int resultCode, Intent data){
     	if(requestCode == GALLERY_REQUEST_CODE)

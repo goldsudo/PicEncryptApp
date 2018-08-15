@@ -1,6 +1,6 @@
 package hhu.jswang.enpicture;
 
-import hhu.tianyinggui.enpicture.R;
+import hhu.jswang.enpicture.R;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
