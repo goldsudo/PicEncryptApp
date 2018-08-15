@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/p"
+    android:padding="5dp"  
+    android:orientation="vertical">
+	<LinearLayout
+	        android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_marginTop="10dp"
+    		android:gravity="center_horizontal"
+    		android:orientation="horizontal">
+
+		<Button
+		    android:id="@+id/choise"
+		    android:layout_width="160dip"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/shape2"
+		    android:text="图片选择"
+		    android:textColor="#FFFFE0" />
+
+	</LinearLayout>
+	<LinearLayout
+	        android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_marginTop="5dp"
+    		android:gravity="center_horizontal"
+    		android:orientation="horizontal">
+		<ImageView
+		    android:id="@+id/imageView"
+		    android:src="@drawable/t"
+		    android:layout_width="230dip"
+		    android:layout_height="230dip"
+		    android:adjustViewBounds="true"
+		    android:background="@drawable/image_back"  />
+
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_horizontal"
+    	android:layout_marginTop="3dp"
+    	android:orientation="horizontal"
+	    >
+	    <EditText
+	        android:id="@+id/key1"
+	        android:layout_width="200dip"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_horizontal"
+	        android:background="@drawable/textshape"
+	        android:ems="10"
+	        android:hint="请输入密钥"
+	        android:inputType="numberDecimal"
+	        android:textColor="#A67D3D" >
+
+	        <requestFocus />
+	    </EditText>
+
+	</LinearLayout>
+	<LinearLayout
+	    android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center_horizontal"
+    	android:layout_marginTop="3dp"
+    	android:orientation="horizontal"
+	    >
+
+		<Button
+		    android:id="@+id/encrypt"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="1dp"
+		    android:layout_marginRight="15dp"
+		    android:background="@drawable/shape2"
+		    android:text="置乱"
+		    android:textColor="#FFFFE0" />
+
+		<Button
+		    android:id="@+id/decrypt"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="5dp"
+		    android:background="@drawable/shape2"
+		    android:text="解密"
+		    android:textColor="#FFFFE0" />
+
+	</LinearLayout>
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_marginTop="10dp"
+    		android:gravity="center_horizontal"
+    		android:orientation="horizontal">
+		</LinearLayout>
+		<LinearLayout
+		    android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_marginTop="5dp"
+    		android:gravity="center_horizontal"
+    		android:orientation="horizontal">
+
+			<Button
+			    android:id="@+id/out"
+			    android:layout_width="100dip"
+			    android:layout_height="wrap_content"
+			    android:background="@drawable/shape2"
+			    android:text="退出"
+			    android:textColor="#FFFFE0" />
+
+		</LinearLayout>
+		    
+</LinearLayout>
